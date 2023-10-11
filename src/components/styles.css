@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Estilização para o CarListContainer */
+* {
+    font-family: Roboto;
+    background-color: rgb(0, 0, 0);
+}
+
+.CarListContainer {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .CarListContainer h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .CarListContainer .card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(54, 209, 121);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .CarListContainer .card h2 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    padding-bottom: 16px;
+    background-color: rgb(54, 209, 121);;
+  }
+  
+  .CarListContainer .card ul {
+    background-color: rgb(54, 209, 121);;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .CarListContainer .card ul li {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-left: 20px;
+    padding: 1px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    background-color: transparent;
+  }
+
+  .CarListContainer .card ul li .nomedocarro {
+    background-color: rgb(255, 255, 255);
+    color: rgb(9, 9, 9);
+    background-color: none;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 34px;
+    font-weight: 1000;
+  }
+
+  .CarListContainer .card ul li .anoecordocarro {
+    background-color: rgb(255, 255, 255);
+    color: rgb(9, 9, 9);
+    font-size: 12px;
+    font-weight: 8;
+  }
+  
+  .CarListContainer .card ul li .valordocarro {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    padding-top: 32px;
+    padding-bottom: 8px;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 20px;
+    font-weight: 1000;
+  }
+  
+  .CarFormContainer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgb(54, 209, 121);;
+  }
+  
+  .CarFormContainer h2 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-bottom: 20px;
+    background-color: rgb(54, 209, 121);;
+  }
+  
+  .CarFormContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(54, 209, 121);;
+  }
+  
+  .CarFormContainer form {
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .CarFormContainer div {
+    grid-template-columns: 50.0% 50.0%;
+    background-color: rgb(54, 209, 121);;
+  }
+
+  .CarFormContainer form input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+
+  }
+  
+  .CarFormContainer form button {
+    background-color: rgb(3, 3, 3);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  /* Consulta de mídia para tornar o layout responsivo */
+@media screen and (max-width: 768px) {
+    .CarListContainer {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .CarListContainer h1 {
+      font-size: 20px;
+    }
+  
+    .CarListContainer .card {
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+  
+    .CarFormContainer {
+      margin: 10px;
+      padding: 10px;
+    }
+    
+    .CarFormContainer h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .CarFormContainer form label {
+        font-size: 16px;
+    }
+    
+    .CarFormContainer form label input {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    .CarFormContainer form button {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+  }
+  
